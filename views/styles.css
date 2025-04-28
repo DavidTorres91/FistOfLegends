@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Texto oscuro */
+}
+
+/* Contenedor principal para el torneo */
+.tournament-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; /* Borde suave */
+}
+
+/* Título del torneo */
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5em;
+    color: #007bff; /* Azul para el título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sección de rondas */
+.round-entry {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #eeeeee; /* Fondo gris claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round-entry h3 {
+    font-size: 1.8em;
+    color: #333333; /* Título oscuro */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Tarjetas de luchadores */
+.fighter-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f8f9fa; /* Fondo de tarjeta suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #007bff; /* Borde azul para la tarjeta */
+    transition: transform 0.3s ease-in-out;
+}
+
+.fighter-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.fighter-card .fighter-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Azul para el nombre */
+}
+
+.fighter-card .fighter-stats {
+    font-size: 1em;
+    color: #666666; /* Texto gris para las estadísticas */
+}
+
+.fighter-card .fighter-stats p {
+    margin: 5px 0;
+}
+
+/* Log de la lucha */
+.fight-entry {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff; /* Fondo blanco para la lucha */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Borde gris suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ganador destacado */
+.fight-entry .winner {
+    font-weight: bold;
+    color: #28a745; /* Verde para el ganador */
+}
+
+/* Estilo de botones */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Añadido: Estilo para el contenedor de cada ronda */
+.fight-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fight-entry h4 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #333333;
+}
+
+.fight-entry p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555555;
+}
+
+.winner {
+    color: #28a745; /* Verde para el ganador */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Estilo especial para la tarjeta del campeón */
+.champion-card {
+    background: linear-gradient(145deg, #003366, #0052cc); /* Degradado azul */
+    color: white;
+    border: 2px solid #fff; /* Borde blanco */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.champion-card .fighter-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f8f9fa;
+}
+
+.champion-card .fighter-stats {
+    font-size: 1.2em;
+}
+
+.champion-card .fighter-stats p {
+    margin: 8px 0;
+    color: #f1f1f1;
+}
+
+.champion-card .fighter-stats p strong {
+    color: #e0e0e0; /* Asegura que los nombres de las stats resalten */
+}
+
+.champion-card .fighter-stats p:last-child {
+    margin-bottom: 0;
+}
